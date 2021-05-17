@@ -1,32 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width='device-width', initial-scale=1.0">
-    <title>Street Food</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@200;300;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/app.css">
-</head>
-<body>
-    
-    <nav class="container mx-auto flex items-center justify-between px-10 py-4">
-        <div>
-            <img src="/img/logo.png" alt="logo">
-        </div>
-        <div>
-            <ul class="flex items-center">
-                <li class="ml-10"><a href="#">Menu</a></li>
-                <li class="ml-10"><a href="#">Offers</a></li>
-                <li class="ml-10"><a href="#">Register</a></li>
-                <li class="ml-10"><a href="#">Login</a></li>
-                <li class="ml-10"><a href="#" class="inline-block px-4 py-2 rounded-full"><img src="/img/cart.png" alt=""></a></li>
-            </ul>
-        </div>
-    </nav>
-    <section class="hero py-8">
+   <section class="hero py-8">
         <div class="container mx-auto px-10 flex items-center justify-between"> 
             <div class="w-1/2">
                 <div class="py-4">
@@ -40,17 +12,68 @@
                 <div class="py-4">
                     <h3 class="text-2xl font-bold"><em>Hey, Come on! Don't wait.</em></h3>
                 </div>
+                <div class="py-4">
+                    <button class="px-6 py-2 rounded-full text-white font-bold mt-4 btn-primary">Order Now</button>
+                </div>
             </div>
             <div class="w-1/2">
                 <img class="rounded-full" src="/img/street.jpg" alt="">
             </div>
         </div>
     </section>
-    <section class="menu container mx-auto px-10 py-8">
+    <section class="menu container px-20 py-8 mx-auto">
         <h1 class="text-xl font-bold mb-8">The Street Food Specials</h1>
-        <div class="grid grid-cols-4 gap-x-12 gap-y-16">
+        <div class="grid grid-cols-4 gap-x-20 gap-y-16">          
             <div class="w-64">
-                <img class="h-40 mb-4 mx-auto" src="/img/fafdas.jpg" alt="">
+                <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/chai.jpg" alt="">
+                <div class="text-center">
+                    <h2 class="mb-4 text-lg">Masala Tea (Kullad)</h2>
+                    <span class="size py-1 px-4 rounded-full uppercase text-sm">1</span>
+                    <div class="flex items-center justify-around mt-6">
+                        <span class="font-bold text-lg">₹20</span>
+                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                            <span>+</span>
+                            <span class="ml-4">Add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-64">
+                <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/coffee.jpg" alt="">
+                <div class="text-center">
+                    <h2 class="mb-4 text-lg">Coffee Hot Chocolate</h2>
+                    <span class="size py-1 px-4 rounded-full uppercase text-sm">1</span>
+                    <div class="flex items-center justify-around mt-6">
+                        <span class="font-bold text-lg">₹80</span>
+                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                            <span>+</span>
+                            <span class="ml-4">Add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu container mx-auto px-20 py-8">
+        <h1 class="text-xl font-bold mb-8">Gujarati Specials</h1>
+        <div class="grid grid-cols-4 gap-x-20 gap-y-16">
+            <div class="w-64">
+                <img class="h-40 mb-4 mx-auto w-60 shadow-2xl rounded-2xl" src="/img/gujaratiDish.jpg" alt="">
+                <div class="text-center">
+                    <h2 class="mb-4 text-lg">Full Gujarati Dish</h2>
+                    <span class="size py-1 px-4 rounded-full uppercase text-sm">1 Dish</span>
+                    <div class="flex items-center justify-around mt-6">
+                        <span class="font-bold text-lg">₹500</span>
+                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                            <span>+</span>
+                            <span class="ml-4">Add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-64">
+                <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/fafdas.jpg" alt="">
                 <div class="text-center">
                     <h2 class="mb-4 text-lg">Fafdas with kadi, mirchi & salad</h2>
                     <span class="size py-1 px-4 rounded-full uppercase text-sm">500 gm.</span>
@@ -64,74 +87,37 @@
                 </div>
             </div>
             <div class="w-64">
-                <img class="h-40 mb-4 mx-auto" src="/img/fafdas.jpg" alt="">
+                <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/jalebi.jpg" alt="">
                 <div class="text-center">
-                    <h2 class="mb-4 text-lg">Fafdas with kadi, mirchi & salad</h2>
+                    <h2 class="mb-4 text-lg">Jalebi</h2>
                     <span class="size py-1 px-4 rounded-full uppercase text-sm">500 gm.</span>
                     <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">₹150</span>
+                        <span class="font-bold text-lg">₹300</span>
                         <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
                             <span>+</span>
                             <span class="ml-4">Add</span>
                         </button>
                     </div>
                 </div>
-            </div><div class="w-64">
-                <img class="h-40 mb-4 mx-auto" src="/img/fafdas.jpg" alt="">
+            </div>
+            <div class="w-64">
+                <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/khamman.jpg" alt="">
                 <div class="text-center">
-                    <h2 class="mb-4 text-lg">Fafdas with kadi, mirchi & salad</h2>
+                    <h2 class="mb-4 text-lg">Khamman with kadi & Mirchi</h2>
                     <span class="size py-1 px-4 rounded-full uppercase text-sm">500 gm.</span>
                     <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">₹150</span>
+                        <span class="font-bold text-lg">₹120</span>
                         <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
                             <span>+</span>
                             <span class="ml-4">Add</span>
                         </button>
                     </div>
                 </div>
-            </div><div class="w-64">
-                <img class="h-40 mb-4 mx-auto" src="/img/fafdas.jpg" alt="">
+            </div>
+            <div class="w-64">
+                <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/khandvi.jpg" alt="">
                 <div class="text-center">
-                    <h2 class="mb-4 text-lg">Fafdas with kadi, mirchi & salad</h2>
-                    <span class="size py-1 px-4 rounded-full uppercase text-sm">500 gm.</span>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">₹150</span>
-                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
-                            <span>+</span>
-                            <span class="ml-4">Add</span>
-                        </button>
-                    </div>
-                </div>
-            </div><div class="w-64">
-                <img class="h-40 mb-4 mx-auto" src="/img/fafdas.jpg" alt="">
-                <div class="text-center">
-                    <h2 class="mb-4 text-lg">Fafdas with kadi, mirchi & salad</h2>
-                    <span class="size py-1 px-4 rounded-full uppercase text-sm">500 gm.</span>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">₹150</span>
-                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
-                            <span>+</span>
-                            <span class="ml-4">Add</span>
-                        </button>
-                    </div>
-                </div>
-            </div><div class="w-64">
-                <img class="h-40 mb-4 mx-auto" src="/img/fafdas.jpg" alt="">
-                <div class="text-center">
-                    <h2 class="mb-4 text-lg">Fafdas with kadi, mirchi & salad</h2>
-                    <span class="size py-1 px-4 rounded-full uppercase text-sm">500 gm.</span>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">₹150</span>
-                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
-                            <span>+</span>
-                            <span class="ml-4">Add</span>
-                        </button>
-                    </div>
-                </div>
-            </div><div class="w-64">
-                <img class="h-40 mb-4 mx-auto" src="/img/fafdas.jpg" alt="">
-                <div class="text-center">
-                    <h2 class="mb-4 text-lg">Fafdas with kadi, mirchi & salad</h2>
+                    <h2 class="mb-4 text-lg">Khandvi</h2>
                     <span class="size py-1 px-4 rounded-full uppercase text-sm">500 gm.</span>
                     <div class="flex items-center justify-around mt-6">
                         <span class="font-bold text-lg">₹150</span>
@@ -144,10 +130,247 @@
             </div>
         </div>
     </section>
-    <script src="/js/app.js"></script>
-</body>
-</html>
 
+    <section class="menu container mx-auto px-20 py-8">
+        <h1 class="text-xl font-bold mb-8">Punjabi Specials</h1>
+        <div class="grid grid-cols-4 gap-x-20 gap-y-16">
+            <div class="w-64">
+                <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/punjabiDish.jpg" alt="">
+                <div class="text-center">
+                    <h2 class="mb-4 text-lg">Full Punjabi Dish</h2>
+                    <span class="size py-1 px-4 rounded-full uppercase text-sm">1 Dish</span>
+                    <div class="flex items-center justify-around mt-6">
+                        <span class="font-bold text-lg">₹600</span>
+                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                            <span>+</span>
+                            <span class="ml-4">Add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-64">
+                <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/jeerarice.jpg" alt="">
+                <div class="text-center">
+                    <h2 class="mb-4 text-lg">Jeera Rice</h2>
+                    <span class="size py-1 px-4 rounded-full uppercase text-sm">1</span>
+                    <div class="flex items-center justify-around mt-6">
+                        <span class="font-bold text-lg">₹100</span>
+                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                            <span>+</span>
+                            <span class="ml-4">Add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-64">
+                <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/dalfry.jpg" alt="">
+                <div class="text-center">
+                    <h2 class="mb-4 text-lg">Dal Fry</h2>
+                    <span class="size py-1 px-4 rounded-full uppercase text-sm">1</span>
+                    <div class="flex items-center justify-around mt-6">
+                        <span class="font-bold text-lg">₹120</span>
+                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                            <span>+</span>
+                            <span class="ml-4">Add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+        <section class="menu container mx-auto px-10 py-8">
+            <h1 class="text-xl font-bold mb-8">Chinese Hub</h1>
+            <div class="grid grid-cols-4 gap-x-20 gap-y-16">
+                <div class="w-64">
+                    <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/manchurian.jpg" alt="">
+                    <div class="text-center">
+                        <h2 class="mb-4 text-lg">Manchurian dry</h2>
+                        <span class="size py-1 px-4 rounded-full uppercase text-sm">1</span>
+                        <div class="flex items-center justify-around mt-6">
+                            <span class="font-bold text-lg">₹170</span>
+                            <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                                <span>+</span>
+                                <span class="ml-4">Add</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-64">
+                    <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/chinese.jpg" alt="">
+                    <div class="text-center">
+                        <h2 class="mb-4 text-lg">Chinese Bhel</h2>
+                        <span class="size py-1 px-4 rounded-full uppercase text-sm">1</span>
+                        <div class="flex items-center justify-around mt-6">
+                            <span class="font-bold text-lg">₹150</span>
+                            <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                                <span>+</span>
+                                <span class="ml-4">Add</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-64">
+                    <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/noodles.jpg" alt="">
+                    <div class="text-center">
+                        <h2 class="mb-4 text-lg">Noodles</h2>
+                        <span class="size py-1 px-4 rounded-full uppercase text-sm">1</span>
+                        <div class="flex items-center justify-around mt-6">
+                            <span class="font-bold text-lg">₹150</span>
+                            <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                                <span>+</span>
+                                <span class="ml-4">Add</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-64">
+                    <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/maggi.jpg" alt="">
+                    <div class="text-center">
+                        <h2 class="mb-4 text-lg">Maggi</h2>
+                        <span class="size py-1 px-4 rounded-full uppercase text-sm">1</span>
+                        <div class="flex items-center justify-around mt-6">
+                            <span class="font-bold text-lg">₹80</span>
+                            <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                                <span>+</span>
+                                <span class="ml-4">Add</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-64">
+                    <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/pasta.jpg" alt="">
+                    <div class="text-center">
+                        <h2 class="mb-4 text-lg">Pasta</h2>
+                        <span class="size py-1 px-4 rounded-full uppercase text-sm">1</span>
+                        <div class="flex items-center justify-around mt-6">
+                            <span class="font-bold text-lg">₹100</span>
+                            <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                                <span>+</span>
+                                <span class="ml-4">Add</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-64">
+                    <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/cheesemaggi.jpg" alt="">
+                    <div class="text-center">
+                        <h2 class="mb-4 text-lg">Cheese Maggi</h2>
+                        <span class="size py-1 px-4 rounded-full uppercase text-sm">1</span>
+                        <div class="flex items-center justify-around mt-6">
+                            <span class="font-bold text-lg">₹110</span>
+                            <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                                <span>+</span>
+                                <span class="ml-4">Add</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section class="menu container mx-auto px-10 py-8">
+        <h1 class="text-xl font-bold mb-8">Snacks</h1>
+        <div class="grid grid-cols-4 gap-x-20 gap-y-16">
+            <div class="w-64">
+                <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/frenchfries.jpg" alt="">
+                <div class="text-center">
+                    <h2 class="mb-4 text-lg">French Fries</h2>
+                    <span class="size py-1 px-4 rounded-full uppercase text-sm">1</span>
+                    <div class="flex items-center justify-around mt-6">
+                        <span class="font-bold text-lg">₹70</span>
+                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                            <span>+</span>
+                            <span class="ml-4">Add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-64">
+                <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/burger2.jpg" alt="">
+                <div class="text-center">
+                    <h2 class="mb-4 text-lg">Veg Burger With Cheese</h2>
+                    <span class="size py-1 px-4 rounded-full uppercase text-sm">1</span>
+                    <div class="flex items-center justify-around mt-6">
+                        <span class="font-bold text-lg">₹120</span>
+                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                            <span>+</span>
+                            <span class="ml-4">Add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-64">
+                <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/burger.jpg" alt="">
+                <div class="text-center">
+                    <h2 class="mb-4 text-lg">Veg Burger Maharaja</h2>
+                    <span class="size py-1 px-4 rounded-full uppercase text-sm">1</span>
+                    <div class="flex items-center justify-around mt-6">
+                        <span class="font-bold text-lg">₹200</span>
+                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                            <span>+</span>
+                            <span class="ml-4">Add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-64">
+                <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/burger1.jpg" alt="">
+                <div class="text-center">
+                    <h2 class="mb-4 text-lg">Veg Burger Double Cheese</h2>
+                    <span class="size py-1 px-4 rounded-full uppercase text-sm">1</span>
+                    <div class="flex items-center justify-around mt-6">
+                        <span class="font-bold text-lg">₹150</span>
+                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                            <span>+</span>
+                            <span class="ml-4">Add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-64">
+                <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/sandwitch.jpg" alt="">
+                <div class="text-center">
+                    <h2 class="mb-4 text-lg">Sandwitch Veg</h2>
+                    <span class="size py-1 px-4 rounded-full uppercase text-sm">4 pieces</span>
+                    <div class="flex items-center justify-around mt-6">
+                        <span class="font-bold text-lg">₹220</span>
+                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                            <span>+</span>
+                            <span class="ml-4">Add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu container mx-auto px-10 py-8">
+        <h1 class="text-xl font-bold mb-8">Pizzas</h1>
+        <div class="grid grid-cols-4 gap-x-20 gap-y-16">
+            <div class="w-64">
+                <img class="h-40 mb-4 mx-auto w-60 rounded-2xl shadow-2xl" src="/img/pizza.jpg" alt="">
+                <div class="text-center">
+                    <h2 class="mb-4 text-lg">Pizza Margherita</h2>
+                    <span class="size py-1 px-4 rounded-full uppercase text-sm">small</span>
+                    <div class="flex items-center justify-around mt-6">
+                        <span class="font-bold text-lg">₹150</span>
+                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                            <span>+</span>
+                            <span class="ml-4">Add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="menu container mx-auto px-10 py-8">
+        <h1 class="text-xl font-bold mb-8">The Street Food Specials</h1>
+            <div class="grid grid-cols-4 gap-x-20 gap-y-16">
+
+            </div>
+    </section> -->
 
 
 
