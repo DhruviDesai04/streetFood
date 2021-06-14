@@ -1,0 +1,126 @@
+[{
+  "name": "Masala Tea (Kullad)",
+  "image": "chai.jpg",
+  "price": "20",
+  "quantity": "1"
+},{
+  "name": "Coffee Hot Chocolate",
+  "image": "coffee.jpg",
+  "price": "80",
+  "quantity": "1"
+},{
+  "name": "Full Gujarati Dish",
+  "image": "gujaratiDish.jpg",
+  "price": "500",
+  "quantity": "1 dish"
+},{
+  "name": "Fafdas with kadi, mirchi & salad",
+  "image": "fafdas.jpg",
+  "price": "150",
+  "quantity": "500 gm."
+},{
+  "name": "Jalebi",
+  "image": "jalebi.jpg",
+  "price": "300",
+  "quantity": "500 gm."
+},{
+  "name": "Khamman with kadi & Mirchi",
+  "image": "khamman.jpg",
+  "price": "120",
+  "quantity": "500 gm."
+},{
+  "name": "Khandvi",
+  "image": "khandvi.jpg",
+  "price": "150",
+  "quantity": "500 gm."
+},{ 
+  "name": "Full Punjabi Dish",
+  "image": "punjabiDish.jpg",
+  "price": "600",
+  "quantity": "1 dish"
+},{ 
+  "name": "Jeera Rice",
+  "image": "jeerarice.jpg",
+  "price": "100",
+  "quantity": "1"
+},{ 
+  "name": "Dal Fry",
+  "image": "dalfry.jpg",
+  "price": "120",
+  "quantity": "1"
+},{ 
+  "name": "French Fries",
+  "image": "frenchfries.jpg",
+  "price": "70",
+  "quantity": "1"
+},{ 
+  "name": "Veg Burger With Cheese",
+  "image": "burger2.jpg",
+  "price": "120",
+  "quantity": "1"
+},{ 
+  "name": "Veg Burger Maharaja",
+  "image": "burger.jpg",
+  "price": "200",
+  "quantity": "1"
+},{ 
+  "name": "Veg Burger Double Cheese",
+  "image": "burger1.jpg",
+  "price": "150",
+  "quantity": "1"
+},{ 
+  "name": "Sandwitch Veg",
+  "image": "sandwitch.jpg",
+  "price": "220",
+  "quantity": "4 pieces"
+},{ 
+  "name": "Manchurian dry",
+  "image": "manchurian.jpg",
+  "price": "170",
+  "quantity": "1"
+},{ 
+  "name": "Chinese Bhel",
+  "image": "chinese.jpg",
+  "price": "150",
+  "quantity": "1"
+},{ 
+  "name": "Noodles",
+  "image": "noodles.jpg",
+  "price": "150",
+  "quantity": "1"
+},{ 
+  "name": "Maggi",
+  "image": "maggi.jpg",
+  "price": "80",
+  "quantity": "1"
+},{ 
+  "name": "Cheese Maggi",
+  "image": "cheesemaggi.jpg",
+  "price": "110",
+  "quantity": "1"
+},{ 
+  "name": "Pizza Margherita",
+  "image": "pizza.jpg",
+  "price": "150",
+  "quantity": "small"
+},{ 
+  "name": "Pizza Italian",
+  "image": "pizza1.jpg",
+  "price": "150",
+  "quantity": "1"
+},{ 
+  "name": "Pizza Chicken Tandoori(non-veg)",
+  "image": "pizza2.jpg",
+  "price": "200",
+  "quantity": "1"
+},{ 
+  "name": "Pizza Corn with Cheese",
+  "image": "pizza3.jpg",
+  "price": "130",
+  "quantity": "1"
+},{ 
+  "name": "Pizza veg",
+  "image": "pizza4.jpg",
+  "price": "100",
+  "quantity": "1"
+}]
