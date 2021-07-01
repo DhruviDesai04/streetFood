@@ -38,13 +38,17 @@ export function initAdmin(socket) {
       .map((order) => {
         return `
                 <tr>
-                <td class="border px-4 py-2 text-green-900">
+                <td class="border px-4 py-2 border border-red-100 text-red-700">
                     <p>${order._id}</p>
                     <div>${renderItems(order.items)}</div>
                 </td>
-                <td class="border px-4 py-2">${order.customerId.name}</td>
-                <td class="border px-4 py-2">${order.address}</td>
-                <td class="border px-4 py-2">
+                <td class="border px-4 py-2 border border-red-100">${
+                  order.customerId.name
+                }</td>
+                <td class="border px-4 py-2 border border-red-100">${
+                  order.address
+                }</td>
+                <td class="border px-4 py-2 border border-red-100">
                     <div class="inline-block relative w-64">
                         <form action="/admin/order/status" method="POST">
                             <input type="hidden" name="orderId" value="${
@@ -89,7 +93,7 @@ export function initAdmin(socket) {
                         </div>
                     </div>
                 </td>
-                <td class="border px-4 py-2">
+                <td class="border px-4 py-2 border border-red-100">
                     ${moment(order.createdAt).format("DD-MM-YY , hh:mm A")}
                 </td>
             </tr>

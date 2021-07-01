@@ -63,7 +63,7 @@ section.cart {
 
 section.login {
     background: $secondary;
-    min-height: calc(100vh - 90px);
+    min-height: calc(100vh - 140px);
     a {
         color: $primary;
         &:hover {
@@ -75,6 +75,14 @@ section.login {
 .noty_theme__mint {
     border-radius: 50px!important;
     padding-left: 8px!important;
+}
+
+section.orders {
+    background: $secondary;
+}
+
+table {
+     background: $secondary;
 }
 
 a.link {
@@ -93,6 +101,10 @@ section.status {
 
 .status-box ul {
     margin-left: 84px;
+}
+
+.status-box ul li small {
+    color: $primary-hover;
 }
 
 // Dots
@@ -204,4 +216,105 @@ section.status {
     float: right;
     margin-top: 8px;
     font-size: 14px;
+}
+
+// Responsive with media queries
+@media (max-width:1025px) {
+    .container {
+        max-width: 90%;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .status-box ul li span:before {
+        font-size: 34px;
+    }
+}
+@media (max-width: 1024px) {
+    .status-box ul li span:before {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .orders .container, .container {
+        max-width: 1450px;
+    }
+}
+@media (min-width: 1025px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+// Flex Navbar
+
+.flexContain {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flexContain1 {
+    flex: 30%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flexContain2 {
+    flex: 70%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media only screen and (max-width: 500px){
+    .flexContain1, .flexContain2 {
+        flex: 100%;
+        align-items: center;
+    }
+    .flexContain1 {
+        justify-content: center;
+    }
+    .flexContain2 {
+        justify-content: center;
+        padding-top: 10px;
+    }
+}
+
+// Scroll button
+#scrollBtn {
+    position: fixed;
+    right: 20px;
+    bottom: 52px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: $primary;
+    box-shadow: 0 0 2px rgb(231, 87, 87);
+    color: $pure;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        background: $primary-hover;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+// Footer
+footer {
+    background: $secondary;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
 }

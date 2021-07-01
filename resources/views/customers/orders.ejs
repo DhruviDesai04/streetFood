@@ -1,14 +1,14 @@
-<section class="orders mx-12 light-section">
+<section class="orders px-12 pb-5">
   <div class="container pt-12">
-    <h1 class="font-bold text-lg mb-4">All orders</h1>
+    <h1 class="font-bold text-2xl mb-4">All orders</h1>
     <% if(messages.success) { %>
     <div
       id="success-alert"
       class="
         flex
         items-center
-        bg-green-500
-        text-white text-sm
+        bg-red-50
+        text-red-700 text-sm
         font-bold
         px-4
         py-3
@@ -27,32 +27,38 @@
       <p><%= messages.success %></p>
     </div>
     <% } %>
-    <table class="w-full table-auto bg-white">
+    <table class="w-full table-auto border-collapse">
       <thead>
         <tr>
-          <th class="px-4 py-2 text-left">Orders</th>
-          <th class="px-4 py-2 text-left">Phone</th>
-          <th class="px-4 py-2 text-left">Address</th>
-          <th class="px-4 py-2 text-left">Time</th>
+          <th class="px-4 py-2 text-left border border-red-100">Orders</th>
+          <th class="px-4 py-2 text-left border border-red-100">Phone</th>
+          <th class="px-4 py-2 text-left border border-red-100">Address</th>
+          <th class="px-4 py-2 text-left border border-red-100">Time</th>
         </tr>
       </thead>
       <tbody>
         <% if(orders.length) { %> <% orders.forEach(order => { %>
         <tr>
-          <td class="border px-4 py-2">
+          <td class="border px-4 py-2 border border-red-100 text-red-700">
             <a class="link" href="/customer/orders/<%= order._id %>"
               ><%= order._id %></a
             >
           </td>
-          <td class="border px-4 py-2"><%= order.phone %></td>
-          <td class="border px-4 py-2"><%= order.address %></td>
-          <td class="border px-4 py-2">
-            <%= moment(order.createdAt).format('DD MM YYYY , hh:mm A') %>
+          <td class="border px-4 py-2 border border-red-100">
+            <%= order.phone %>
+          </td>
+          <td class="border px-4 py-2 border border-red-100">
+            <%= order.address %>
+          </td>
+          <td class="border px-4 py-2 border border-red-100">
+            <%= moment(order.createdAt).format('DD-MM-YYYY , hh:mm A') %>
           </td>
         </tr>
         <% }) %> <% } else { %>
         <tr>
-          <td class="p-4"><span>No orders found!</span></td>
+          <td class="p-4 text-red-700">
+            <span>No orders found!</span>
+          </td>
         </tr>
         <% } %>
       </tbody>
