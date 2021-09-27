@@ -1,4 +1,4 @@
-<section class="orders px-12 pb-5">
+<section class="orders px-12 pb-20">
   <div class="container pt-12">
     <h1 class="font-bold text-2xl mb-4">All orders</h1>
     <% if(messages.success) { %>
@@ -34,6 +34,9 @@
           <th class="px-4 py-2 text-left border border-red-100">Phone</th>
           <th class="px-4 py-2 text-left border border-red-100">Address</th>
           <th class="px-4 py-2 text-left border border-red-100">Time</th>
+          <th class="px-4 py-2 text-left border border-red-100">
+            Payment Status
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -52,6 +55,9 @@
           </td>
           <td class="border px-4 py-2 border border-red-100">
             <%= moment(order.createdAt).format('DD-MM-YYYY , hh:mm A') %>
+          </td>
+          <td class="border px-4 py-2 border border-red-100">
+            <%= order.paymentStatus ? "Paid" : "Not Paid" %>
           </td>
         </tr>
         <% }) %> <% } else { %>

@@ -17,7 +17,7 @@ function cartController() {
       // check if item does not exist in cart
       if (!cart.items[req.body._id]) {
         cart.items[req.body._id] = {
-          items: req.body,
+          item: req.body,
           qty: 1,
         };
         cart.totalQty = cart.totalQty + 1;

@@ -8,19 +8,13 @@
     <div class="orders">
       <% for(let food of Object.values(session.cart.items)) { %>
       <div class="flex items-center my-8">
-        <img
-          class="w-24 rounded-2xl"
-          src="/img/<%= food.items.image%>"
-          alt=""
-        />
+        <img class="w-24 rounded-2xl" src="/img/<%= food.item.image%>" alt="" />
         <div class="flex-1 ml-4">
-          <h1><%= food.items.name%></h1>
-          <span><%= food.items.quantity%></span>
+          <h1><%= food.item.name%></h1>
+          <span><%= food.item.quantity%></span>
         </div>
         <span class="flex-1"><%= food.qty%> Pcs</span>
-        <span class="font-bold text-lg"
-          >₹<%= food.items.price * food.qty%></span
-        >
+        <span class="font-bold text-lg">₹<%= food.item.price * food.qty%></span>
       </div>
       <% } %>
     </div>
@@ -35,7 +29,29 @@
       </div>
       <% if(user) { %>
       <div>
-        <form action="/orders" method="POST" class="mt-12">
+        <form action="/orders" method="POST" class="mt-12" id="payment-form">
+          <label class="w-1/2 block ml-auto mb-4">
+            <select
+              id="paymentType"
+              name="paymentType"
+              class="
+                block
+                w-full
+                mt-1
+                bg-white
+                border border-gray-400
+                hover:border-gray-500
+                p-2
+                pr-8
+                rounded
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+            >
+              <option value="cod">Cash On Delivery</option>
+              <option value="card">Card Payment</option>
+            </select>
+          </label>
           <input
             name="phone"
             class="border border-gray-400 p-2 w-1/2 mb-4"
@@ -48,7 +64,8 @@
             type="text"
             placeholder="Address"
           />
-          <div>
+          <div class="mt-4">
+            <div id="card-element"></div>
             <button
               type="submit"
               class="

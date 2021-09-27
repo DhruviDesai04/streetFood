@@ -24,11 +24,18 @@ export function initAdmin(socket) {
 
   function renderItems(items) {
     let parsedItems = Object.values(items);
+    console.log(parsedItems);
+    // return parsedItems.forEach((menuItem) => {
+    //   console.log(menuItem.item.name);
+    //   return `
+    //             <p>${menuItem.item.name} - ${menuItem.qty} </p>
+    //         `;
+    // });
     return parsedItems
       .map((menuItem) => {
         return `
-                <p>${menuItem.items.name} - ${menuItem.qty} </p>
-            `;
+        <p> ${menuItem.item.name} - ${menuItem.qty} </p>
+      `;
       })
       .join("");
   }
@@ -95,6 +102,9 @@ export function initAdmin(socket) {
                 </td>
                 <td class="border px-4 py-2 border border-red-100">
                     ${moment(order.createdAt).format("DD-MM-YY , hh:mm A")}
+                </td>
+                <td class="border px-4 py-2 border border-red-100">
+                    ${order.paymentStatus ? "Paid" : "Not Paid"}
                 </td>
             </tr>
             `;
